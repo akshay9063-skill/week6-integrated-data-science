@@ -1,0 +1,9 @@
+This Week 6 project, titled “Breast Cancer Diagnosis Classification: An End-to-End Data Science Pipeline,” demonstrates a complete data science workflow using the Wisconsin Diagnostic Breast Cancer benchmark dataset. The objective is to classify samples as benign or malignant based on numeric measurements of cell nuclei. The project includes data loading, validation, data cleaning, exploratory data analysis, preprocessing, model training, evaluation, visualization, and comprehensive reporting.
+
+The dataset contains 569 samples and 30 numeric features. The workflow checks data quality and class distribution, then creates a reproducible stratified 80/20 training and testing split. Median imputation and feature standardization are combined with logistic regression in a scikit-learn pipeline. This keeps preprocessing within the training workflow and helps prevent data leakage. Model performance is evaluated using accuracy, malignant-class precision, malignant-class recall, F1-score, and ROC-AUC. The report also includes a class distribution chart, feature distribution chart, confusion matrix, and ROC curve.
+
+The project files include the Word report, dataset CSV, Python analysis script, Jupyter notebook, visualizations, test predictions, saved evaluation metrics, and README instructions. The fixed random seed supports reproducibility, and the README explains how to install dependencies and run the analysis.
+
+The results are a baseline on a curated benchmark, not proof of clinical performance. The dataset may not represent real-world patient populations, and a single test split is not external validation. Future work includes cross-validation, calibration, external validation, subgroup analysis, and expert review. This project is strictly educational and must not be used for diagnosis or treatment decisions.
+
+Dataset documentation: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html
